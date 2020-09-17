@@ -1,0 +1,16 @@
+<!--This section will display the list of movies added to favourites which is being fetched from JSON server-->
+<section class="favourites-section">
+  <h4>Your Favourite List</h4>
+  <section class="d-flex flex-wrap">
+    <div *ngFor="let movie of favouriteList" class="card">
+      <p class="name">Title: {{movie.originalTitle}}</p>
+      <p>Release Date: {{movie.releaseDate}}</p>
+      <p>Average Rating: {{movie.voteAverage}}</p>
+      <img src={{movie.posterPath}} alt="Movie Poster">
+      <div class="button">
+        <button class="btn btn-primary" (click)="deleteFromFavourites(movie.movieAddedBy, movie.id)">Delete from
+          Favourites</button>
+      </div>
+    </div>
+  </section>
+</section>

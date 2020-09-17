@@ -1,0 +1,19 @@
+<div class='search-section'>
+  <div class="head-content">
+    <h2>Search for Movie:</h2>
+    <!--Getting movie title input from the user-->
+    <input type="text" [(ngModel)]="value" placeholder="MovieTitle" class="form-control" /><br>
+    <button (click)="getMoviesByTitle(value)" class="btn btn-primary btm-block">SEARCH</button>
+  </div>
+<!--This section will display the search result based on the movie title given by user-->
+  <section class="d-flex flex-wrap">
+    <div *ngFor="let movie of searchedMovies" class="card">
+      <p class="title">Title: {{movie.originalTitle}}</p>
+      <p>Release Date: {{movie.releaseDate}}</p>
+      <p>Average Rating: {{movie.voteAverage}}</p>
+        <img class="movie-poster" src="{{ movie.posterPath }}" alt="Movie Poster">
+        <button class="btn btn-primary" (click)= "add(movie)"> Add to Favourites</button>
+        <small [class.error-message]='movie.invalid' *ngIf='movie.invalid'>{{errMessage}}</small>
+    </div>
+  </section>
+</div>

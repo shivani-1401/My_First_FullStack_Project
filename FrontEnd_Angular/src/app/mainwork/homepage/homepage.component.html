@@ -1,0 +1,16 @@
+<div class='trending-section'>
+    <div class="head-content">
+        <h2><i>Trending Movies</i></h2>
+    </div>
+    <!--Section to display what's trending-->
+    <section class="d-flex flex-wrap">
+        <div *ngFor="let movie of trendingMovies" class="card">
+            <p class="title">Title: {{movie.originalTitle}}</p>
+            <p>Release Date: {{movie.releaseDate}}</p>
+            <p>Average Rating: {{movie.voteAverage}}</p>
+            <img class="movie-poster" src="{{ movie.posterPath }}" alt="Movie Poster">
+            <button class="btn btn-primary" (click)="add(movie)"> Add to Favourites</button>
+            <small [class.error-message]='movie.invalid' *ngIf='movie.invalid'>{{errMessage}}</small>
+        </div>
+    </section>
+</div>

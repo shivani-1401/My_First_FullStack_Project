@@ -1,0 +1,58 @@
+.trending-section {
+  text-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.card {
+  width: 350px;
+  height: 550px;
+  align-items: center;
+  border: 1px solid black;
+  background-color: lightblue;
+  margin: 10vh 5vw;
+}
+
+.movie-poster {
+  width: 280px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+.title {
+  font-weight: bold;
+}
+
+button {
+  margin: 15px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 320px) {
+  .card {
+    width: 300px;
+    height: 500px;
+    margin: 2em;
+  }
+
+  .movie-poster {
+    width: 200px;
+    height: 250px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
