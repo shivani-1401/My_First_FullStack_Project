@@ -1,10 +1,10 @@
 # My_First_FullStack_Project
 
 
-# Frontend Technology used
+## Frontend Technology used
 Frontend is designed using Angular, Angular Material.
 
-# Backend Technology Used
+## Backend Technology Used
 Backend is designed using Spring Framework. Microservice pattern like Nteflix Zull and Eureka Discovery is used.
 Created with Spring Initializer (start.spring.io) with the follwing dependency
 Web, DevTools, EurekaDiscovery , Zuul
