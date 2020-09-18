@@ -1,4 +1,4 @@
-# MyFirstFullStackProject
+# My_First_FullStack_Project
 
 
 # Frontend Technology used
